@@ -1,20 +1,26 @@
+# docs
+详细教程 --> [基于 Cloudflare Workers 和 cloudflare-docker-proxy 搭建镜像加速服务](https://www.lixueduan.com/posts/docker/12-docker-mirror/)
+
+---
+
 # cloudflare-docker-proxy
 
-![deploy](https://github.com/linux-lixin/cloudflare-docker-proxy/actions/workflows/deploy.yaml/badge.svg)
+![deploy](https://github.com/ciiiii/cloudflare-docker-proxy/actions/workflows/deploy.yaml/badge.svg)
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/linux-lixin/cloudflare-docker-proxy)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ciiiii/cloudflare-docker-proxy)
 
 > If you're looking for proxy for helm, maybe you can try [cloudflare-helm-proxy](https://github.com/ciiiii/cloudflare-helm-proxy).
 
 ## Deploy
-
-1. click the "Deploy With Workers" button
-2. follow the instructions to fork and deploy
-3. update routes as you requirement
-
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/linux-lixin/cloudflare-docker-proxy)
 
-## Routes configuration tutorial
+1. fork this project
+2. modify the link of the above button to your fork url
+3. click the button, you will be redirected to the deploy page
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ciiiii/cloudflare-docker-proxy)
+
+## Config tutorial
 
 1. use cloudflare worker host: only support proxy one registry
    ```javascript
@@ -37,4 +43,3 @@
      "ghcr.libcuda.so": "https://ghcr.io",
    };
    ```
-
